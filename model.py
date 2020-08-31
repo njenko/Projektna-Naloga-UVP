@@ -39,6 +39,15 @@ class Ekipa:
         igra = Igra(winner, loser)
         self.odigrane_igre.append(igra)
 
+    def izracunaj_tocke_ekipe(self):
+        st_tock = 0
+        for i in range len(odigrane_igre):
+            if odigrane_igre[i].winner == ime:
+                st_tock =+ 1
+            else:
+                pass
+
+
 
 class Igra:
     def __init__(self, winner, loser):
