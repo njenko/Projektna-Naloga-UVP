@@ -1,19 +1,23 @@
 class Turnir:
     def __init__(self, stevilo_skupin, nacin_igranja):
         self.stevilo_skupin = stevilo_skupin
+        self.nacin_igranja = nacin_igranja
         self.seznam_skupin = []
+        self.seznam_ekip = []
+
 
 #nacin_igranja = 1 - single round robin, = 2 - double round robin
 
 class Skupina:
     def __init__(self, indeks_skupine):
-        self.seznam_ekip = []
+        self.ekipe_v˜_skupini = []
 
     def dodaj_ekipo(self, ime, seed1, ekskluzivni_kriterij):
         nova_ekipa = Ekipa(ime,seed1, ekskluzivni_kriterij)
-        self.seznam_ekip.append(nova_ekipa)
+        elf.ekipe_v_skupini.append(nova_ekipa)
 
-    def zakljucena_skupina(nacin_igranja):
+
+    def zakljucena_skupina(self, nacin_igranja):
         if len(seznam_ekip) < 1:
             pass
         else:
@@ -24,8 +28,9 @@ class Skupina:
                 else:
                     ekipe_koncane =+ 1
         if len(seznam_ekip) = ekipe_koncane:
-            #nekje da se ve da je skupina odigrala vse ekipe
-
+            return True
+        else:
+            return False
 
 
 class Ekipa:
