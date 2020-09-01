@@ -6,4 +6,4 @@ LOGO = ''' Tournament maker '''
 def zacetna_stran():
     return LOGO
 
-bottle.run()
+bottle.run(debug=True, reloader=True)
