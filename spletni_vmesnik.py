@@ -1,9 +1,8 @@
 import bottle
 
-LOGO = ''' Tournament maker '''
 
 @bottle.get('/')
 def zacetna_stran():
-    return LOGO
+    return bottle.template('zacetna_stran.html')
 
 bottle.run(debug=True, reloader=True)
